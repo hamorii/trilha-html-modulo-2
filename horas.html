@@ -6,6 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>clinica</title>
     <link rel="stylesheet" href="base.css">
+    <style>
+        .hora{
+            -webkit-box-shadow: 4px 4px 7px 1px rgba(0,0,0,0.75);
+            -moz-box-shadow: 4px 4px 7px 1px rgba(0,0,0,0.75);
+            box-shadow: 4px 4px 7px 1px rgba(0,0,0,0.75);
+        }
+        .hora thead th{
+            background-color: black;
+            color: white;
+        }
+
+        .hora tfoot td{
+            background-color: #b6b6b6;
+        }
+        .hora tbody tr:nth-child(even) td{
+            background-color: lightgrey;
+        }
+        .hora tbody tr:hover td{
+            background-color: #b9b9b9;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div class="wrapper">
@@ -26,14 +48,14 @@
                 <table>
                     <tr>
                         <td>
-                            <img src="imgs/download.png" height="145">
+                            <img src="imgs/818.png" height="145">
                         </td>
                         <td> 
                             <H1>
                                 clinica geral
                             </H1>
                         </td>
-                        <td><sup><strong><small>página Principal</small></strong></sup></td>
+                        <td><sup><strong><small>Horário de Atendimento</small></strong></sup></td>
                     </tr>
                 </table>
 
@@ -41,13 +63,47 @@
             </div>
     
             <div class="content">
-                <h3>pagina principal</h3>
-                <p>
-                    Nossa clínica geral oferece uma gama ampla de serviços médicos primários destinados a cuidar da saúde geral dos pacientes. As clínicas gerais no estado normalmente estão equipadas para realizar consultas médicas, exames de rotina, diagnósticos iniciais e encaminhamentos para especialistas, quando necessário. Elas atendem a diferentes faixas etárias, desde crianças até idosos, e tratam diversas condições de saúde, incluindo doenças crônicas, infecções, problemas respiratórios, entre outros.<br>
+                <h3>Horário de Atendimento</h3>
 
-                    Essas clínicas também podem proporcionar serviços de vacinação, controle de pressão arterial, tratamento de pequenas lesões e orientações sobre hábitos saudáveis. Em cidades como Rio Branco, a capital do estado, é possível encontrar clínicas gerais que combinam atendimento humanizado com tecnologia avançada, garantindo um cuidado de qualidade aos moradores do Acre.
-                </p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/BRwit1Es-2s?si=f-iyOG9fvdyVTcwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <table border="10" cellspacing="0" cellpadding="3" class="hora">
+                    <caption><strong>informações sobre os horarios de atendimento</strong></caption>
+                    <thead>
+                        <tr>
+                            <th>procedimentos</th>
+                            <th>dias uteis</th>
+                            <th>sábado e domingo</th>
+                            <th>feriados</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Vacinação</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Clínica geral</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>psicologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Pediatria</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                    </tfoot>
+                </table>
                 <!-- Aqui vai o seu conteúdo -->
             </div>
     
